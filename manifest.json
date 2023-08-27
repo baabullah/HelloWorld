@@ -10,7 +10,9 @@
       {
         "resources": [
           "inject.js",
-          "jquery-3.6.0.min.js"
+          "jquery-3.6.0.min.js",
+		  "wa-receive.mp3",
+		  "wa-send.mp3"
         ],
         "matches": ["<all_urls>"]
       }
@@ -21,4 +23,5 @@
         "js": ["contentscript.js"]
       }
     ]
+	
 }

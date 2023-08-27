@@ -7,10 +7,13 @@ function loadInject() {
 	(document.head || document.documentElement).appendChild(s);
 }
 
-var s2 = document.createElement('script');
-s2.src = chrome.runtime.getURL('jquery-3.6.0.min.js');
-s2.onload = function() {
-	loadInject();
-	this.remove();
-};
-(document.head || document.documentElement).appendChild(s2);
+
+	var s2 = document.createElement('script');
+	s2.src = chrome.runtime.getURL('jquery-3.6.0.min.js');
+	s2.onload = function() {
+		loadInject();
+		this.remove();
+	};
+	(document.head || document.documentElement).appendChild(s2);
+
+console.log(chrome.runtime.getURL('wa-received.mp3'));

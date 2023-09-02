@@ -12,7 +12,10 @@
           "inject.js",
           "jquery-3.6.0.min.js",
 		  "wa-receive.mp3",
-		  "wa-send.mp3"
+		  "wa-send.mp3",
+		  "receive.mp3",
+		  "sent.mp3",
+		  "typing.wav"
         ],
         "matches": ["<all_urls>"]
       }
@@ -20,7 +23,7 @@
   "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["contentscript.js"]
+        "js": ["jquery-3.6.0.min.js","contentscript.js"]
       }
     ]
 	

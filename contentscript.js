@@ -68,7 +68,7 @@ function processAutomation() {
 		setTimeout(function(){
 			lines = message.split("\n");
 			showLines(function (){
-				showPicker();
+				//showPicker();
 			});
 		}, 4000);
 		
@@ -83,7 +83,9 @@ function showLines(callback) {
 		simulateTyping(msg, function (){
 			typingsound.src = '';
 			bubble.dispatchEvent(event);
-			setTimeout(showLines, 2000);
+			setTimeout(function () {
+				showLines(callback);
+			}, 2000);
 		});
 	} else {
 		if (callback != null) {

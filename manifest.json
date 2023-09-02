@@ -15,7 +15,8 @@
 		  "wa-send.mp3",
 		  "receive.mp3",
 		  "sent.mp3",
-		  "typing.wav"
+		  "typing.wav",
+		  "ting.mp3"
         ],
         "matches": ["<all_urls>"]
       }

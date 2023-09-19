@@ -1,6 +1,6 @@
 function loadInject() {
 	var s = document.createElement('script');
-	s.src = chrome.runtime.getURL("inject.js");
+	s.src = chrome.runtime.getURL("WhatsappAutomation.js");
 	s.onload = function() {
 		this.remove();
 	};

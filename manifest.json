@@ -16,7 +16,8 @@
 		  "receive.mp3",
 		  "sent.mp3",
 		  "typing.wav",
-		  "ting.mp3"
+		  "ting.mp3",
+      "WhatsappAutomation.js"
         ],
         "matches": ["<all_urls>"]
       }
@@ -24,7 +25,7 @@
   "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["jquery-3.6.0.min.js","contentscript.js"]
+        "js": ["jquery-3.6.0.min.js","contentscript.js", "WhatsappAutomation.js"]
       }
     ]
 	

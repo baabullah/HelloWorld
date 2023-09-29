@@ -82,7 +82,7 @@ class WhatsappAutomation {
     }
 
     clearScreen() {
-        this.chatRoom = this.getDom("/html/body/main/div[1]/div/div[3]/div[2]/div[1]/div/div[2]/div/div/div[3]");
+        this.chatRoom = this.getDom("/html/body/div[1]/div/div/div[5]/div/div[2]/div/div[2]/div[3]");
         this.chatRoom.innerHTML = "";
     }
 
@@ -214,3 +214,42 @@ class WhatsappAutomation {
         }
       }
 }
+
+
+var fake = new WhatsappAutomation();
+fake.messageList = [
+    {"pov":"partner", "text":"שלום מקסים! אני מקווה ששלומך טוב. המומחים שלנו בדקו את חשבונך הפיננסי ומאמינים שעכשיו יהיה זמן מצוין עבורך לפתוח תוכנית חיסכון", "time":"9:26 am"},
+    {"pov":"partner", "text":'עם יתרה נהדרת של 35 אלף ש"ח והיסטוריה פיננסית טובה, אני אשמח להציע לך תנאים אטרקטיביים במיוחד בשבילך. תוכנית חיסכון תעזור לך להגדיל את סך חסכונותיך',"time":"9:26 am"},
+    {"pov":"partner", "text":"?תרצה לשמוע עוד פרטים", "time":"9:26 am"},
+    {"pov":"user", "text":"אשמח לשמוע עוד", "time":"9:26 am"},
+    {"pov":"partner", "text":"על מנת שנוכל להתחיל את התהליך אשמח לדעת מה יהיה סכום ההפקדה שאותו תרצה להפקיד? ניתן להפקיד עד גובה יתרת חשבונך השקלית באישור מיידי", "time":"9:26 am"},
+    {"pov":"user", "text":"אין לי מושג, כמה מומלץ בדרך כלל", "time":"9:26 am"},
+    {"pov":"partner", "text":"שאלה נהדרת! כדי למקסם את חסכונותיך מומחינו ממליצים להתחיל מסכום של לפחות 10,000 שקלים", "time":"9:26 am"},
+    {"pov":"user", "text":"אוקיי אעשה זאת, בוא נשים 25,000", "time":"9:26 am"},
+    {"pov":"partner", "text":"בטח. אשמח לדעת למשך כמה זמן תרצה לפתוח את תוכנית החיסכון? כרגע האופציות הקיימות הן בין חצי שנה לשש שנים", "time":"9:26 am"},
+    {"pov":"partner", "text":"?לכמה זמן תעדיף להשקיע את כספך", "time":"9:26 am"},
+    {"pov":"user", "text":"שמונה חודשים", "time":"9:26 am"},
+    {"pov":"partner", "text":"מעולה! בעבור סכום של 25,000 שקלים ולמשך שמונה חודשים הריבית הטובה ביותר הינה 4.55%", "time":"9:26 am"},
+    {"pov":"partner", "text":"?איך נשמעת לך ההצעה", "time":"9:26 am"},
+    {"pov":"user", "text":".נשמע נהדר", "time":"9:26 am"},
+    {"pov":"partner", "text":'מושלם! כעת אזדקק להסכמתך לפתיחת תוכנית החיסכון. אני אחזור כעת על סיכום התנאים המדוברים לעיל. מקסים, החלטת לפתוח תוכנית חיסכון על סך 25,000 שח למשך של שמונה חודשים, בשיעור ריבית של 4.55%', "time":"9:26 am"},
+    {"pov":"partner", "text":"?האם אתה מאשר את המצוין בהודעה זו", "time":"9:26 am"},
+    {"pov":"user", "text":"כן", "time":"9:26 am"},
+    {"pov":"partner", "text":"נהדר, איזה כיף לשמוע! לשלב האחרון בתהליך האימות אשמח אם תוכל להיכנס ללינק בהודעה זו ולאשר את זהותך", "time":"9:26 am"},
+    {"pov":"partner", "text":"שכבת אבטחה נוספת זו מבטיחה שהמידע הפיננסי שלך יישאר בטוח וסודי. אנא עקוב אחר קישור זה כדי לאמת", "time":"9:26 am"},
+    {"pov":"partner", "text":"https://www.Discount.co.il/CD-bot", "time":"9:26 am"},
+    {"pov":"partner", "text":"לאחר שתאמת בהצלחה, נוכל לאשר את פרטי תוכנית החיסכון", "time":"9:26 am"},
+
+    
+    {"pov":"user", "text":"אימתי את זהותי", "time":"9:26 am"},
+    {"pov":"partner", "text":"אני שמח לראות שעברת את האימות בהצלחה", "time":"9:26 am"},
+    {"pov":"partner", "text":"ביצעתי את העסקה לפתיחת תוכנית החיסכון. זהו צעד משמעותי לקראת הבטחת העתיד הכלכלי שלך. אם יש לך שאלות נוספות או שאתה זקוק לעזרה נוספת, אנא פנה אלינו בכל שעה", "time":"9:26 am"},
+    {"pov":"partner", "text":"🙂שיהיה לך יום נהדר, מקסים", "time":"9:26 am"}
+    ];
+fake.profileImage = '<a href="https://ibb.co/yphdkc3"><img src="https://i.ibb.co/tzZQ2Td/discount.jpg" alt="discount" border="0"></a>';
+fake.profileName = 'דיסקונט';
+fake.run();
+
+
+
+    
